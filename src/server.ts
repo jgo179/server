@@ -19,7 +19,7 @@ import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
 app.register(fastifyCors, {
-  origin: 'http://localhost:3333',
+  origin: 'http://localhost:3000',
 })
 
 app.register(fastifySwagger, {
